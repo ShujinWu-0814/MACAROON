@@ -1,0 +1,23 @@
+
+
+data:
+  data_module: DataModule_SFT
+  eval_module: EvalModule
+  preference_data_path: ../datasets/train/preference_dataset.json
+  VLfeedback_data_path: ../datasets/train/VLfeedback_dataset.json
+  eval_data_path: ../datasets/eval/evaluation_data.jsonl
+
+  
+model:
+  model_module: llava
+
+training:
+  epochs: 1
+  accumulate_grad_batches: 32
+  weight_decay: 0.01
+  learning_rate: 0.0001 # 0.002
+  # checkpoint_every_n_steps: 
+
+output_dir: ../model_output/output_model_SFTaftermultiturn
+eval_output_path: ../eval_results/SFTaftermultiturn_eval_results.jsonl
+resume_from_checkpoint: ../model_output/output_model_multiturn/model_final.pt

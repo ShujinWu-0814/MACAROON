@@ -1,0 +1,22 @@
+
+
+data:
+  data_module: DataModule_dpo
+  eval_module: EvalModule
+  preference_data_path: ../datasets/train/preference_dataset.json
+  VLfeedback_data_path: ../datasets/train/VLfeedback_dataset.json
+  eval_data_path: ../datasets/eval/evaluation_data.jsonl
+
+  
+model:
+  model_module: llava_dpo
+
+training:
+  epochs: 1
+  accumulate_grad_batches: 128
+  weight_decay: 0.01
+  learning_rate: 0.00005 # 0.002
+  # checkpoint_every_n_steps: 
+
+output_dir: ../model_output/output_model_dpo
+eval_output_path: ../eval_results/dpo_eval_results.jsonl
