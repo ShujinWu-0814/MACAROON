@@ -14,7 +14,7 @@ pip install -r requirements.txt
 For evaluation, you may need to set up variable `openai.api_key` in line 10 in [metric_cal.py](./eval/metric_cal.py)
 
 ## 📊Datasets
-Both the evaluation dataset of 🍰PIE and those training datasets are stored [here](https://drive.google.com/drive/folders/1yt56L_q0mC19_-fJMCHJksks6JocF0LU?usp=drive_link). You can simply download it and place it under the MACAROON folder for further training & evaluation.
+Both the evaluation dataset of 🍰PIE and those training datasets are stored [here](https://drive.google.com/drive/folders/1MSxrwENeTALKmhvthbCx15BvgHM9sTDW?usp=drive_link). You can simply download it and place it under the MACAROON folder for further training & evaluation.
 
 > [!NOTE]  
 > The evaluation dataset of PIE are under `eval`, named `evaluation_dataset.jsonl`.\
