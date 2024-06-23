@@ -4,6 +4,7 @@
 ## 🎀Overview
 We present self-iMaginAtion for ContrAstive pReference OptimizatiON, MACAROON, which leverages self-imagination based on human criteria to construct the contrastive preference dataset and utilizes conditional reinforcement learning for unified training. MACAROON can effectively enhance the proactive conversation capabilities of LVLMs, showcasing the potential for LVLMs to evolve into truly interactive partners that enhance rather than impede effective communication.
 
+![MACAROON](./MACAROON.jpg)
 ## 🌟Requirements
 The required Python packages for running this repo are listed in [requirements.txt](./requirements.txt). To install these pacakages at one time, plaese run
 ```shell
