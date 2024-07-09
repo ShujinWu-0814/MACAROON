@@ -48,3 +48,11 @@ python eval/metric_cal.py --method CRL
 
 ## 📚Citation
 If you use or extend our work, please consider citing our paper. Thank you for your support! 🥰
+```shell
+@article{wu2024macaroon,
+  title={MACAROON: Training Vision-Language Models To Be Your Engaged Partners},
+  author={Wu, Shujin and Fung, Yi R and Li, Sha and Wan, Yixin and Chang, Kai-Wei and Ji, Heng},
+  journal={arXiv preprint arXiv:2406.14137},
+  year={2024}
+}
+```
