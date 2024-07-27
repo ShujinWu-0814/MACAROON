@@ -26,10 +26,12 @@ Both the evaluation dataset of 🍰PIE and those training datasets are stored [h
 ## 🚀Training
 The training for MACAROON uses [train_SFT.py](./train/train_SFT.py). Note that our ablation studies on SFT and multi-turn conversational training also uses this file. So you will need to specify the methods used for training in argument of command-line for running. For instance, training MACAROON using CRL should run
 ```shell
+export PYTHONPATH='pwd':$PYTHONPATH
 python -m torch.distributed.launch --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr="192.168.0.1" --master_port=1234 train_SFT.py --method CRL 
 ```
 Except for MACAROON, SFT and multi-turn conversation training, the training for DPO uses [train_dpo.py](./train/train_dpo.py). You don't need to specify the method to run it. Just simply run 
 ```shell
+export PYTHONPATH='pwd':$PYTHONPATH
 python -m torch.distributed.launch --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr="192.168.0.1" --master_port=1234 train_dpo.py
 ```
 > [!NOTE]  
