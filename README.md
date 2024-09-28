@@ -1,4 +1,4 @@
-# MACAROON: Training Vision-Language Models To Be Your Engaged Partners
+# MACAROON: Training Vision-Language Models To Be Your Engaged Partners [EMNLP 2024 Findings✨]
 
 
 ## 🎀Overview
